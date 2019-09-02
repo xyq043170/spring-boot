@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo.mapper.PAddressInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.example.demo.dao.PAddressInfo" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="p_user_id" property="pUserId" jdbcType="INTEGER" />
+    <result column="address_type" property="addressType" jdbcType="INTEGER" />
+    <result column="recipients" property="recipients" jdbcType="VARCHAR" />
+    <result column="province" property="province" jdbcType="VARCHAR" />
+    <result column="city" property="city" jdbcType="VARCHAR" />
+    <result column="district" property="district" jdbcType="VARCHAR" />
+    <result column="postcode" property="postcode" jdbcType="INTEGER" />
+    <result column="phone" property="phone" jdbcType="BIGINT" />
+    <result column="save_time" property="saveTime" jdbcType="TIMESTAMP" />
+    <result column="address_info" property="addressInfo" jdbcType="LONGVARCHAR" />
+    <result column="local" property="local" jdbcType="LONGVARCHAR" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo.mapper.POrderMapper" >
+  <resultMap id="BaseResultMap" type="com.example.demo.dao.POrder" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="order_number" property="orderNumber" jdbcType="BIGINT" />
+    <result column="handler" property="handler" jdbcType="INTEGER" />
+    <result column="allocator" property="allocator" jdbcType="INTEGER" />
+    <result column="p_user_id" property="pUserId" jdbcType="INTEGER" />
+    <result column="mall_id" property="mallId" jdbcType="VARCHAR" />
+    <result column="mall_num" property="mallNum" jdbcType="VARCHAR" />
+    <result column="address_info" property="addressInfo" jdbcType="VARCHAR" />
+    <result column="recipients" property="recipients" jdbcType="VARCHAR" />
+    <result column="postcode" property="postcode" jdbcType="INTEGER" />
+    <result column="phone" property="phone" jdbcType="BIGINT" />
+    <result column="order_status" property="orderStatus" jdbcType="INTEGER" />
+    <result column="process_status" property="processStatus" jdbcType="INTEGER" />
+    <result column="order_total" property="orderTotal" jdbcType="INTEGER" />
+    <result column="save_time" property="saveTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+</mapper>

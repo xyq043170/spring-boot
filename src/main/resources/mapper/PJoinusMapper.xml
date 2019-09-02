@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo.mapper.PJoinusMapper" >
+  <resultMap id="BaseResultMap" type="com.example.demo.dao.PJoinus" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="proposer" property="proposer" jdbcType="VARCHAR" />
+    <result column="industry" property="industry" jdbcType="VARCHAR" />
+    <result column="age_limit" property="ageLimit" jdbcType="INTEGER" />
+    <result column="site_scale" property="siteScale" jdbcType="VARCHAR" />
+    <result column="numbers" property="numbers" jdbcType="INTEGER" />
+    <result column="contacts" property="contacts" jdbcType="VARCHAR" />
+    <result column="sex" property="sex" jdbcType="VARCHAR" />
+    <result column="phone" property="phone" jdbcType="BIGINT" />
+    <result column="channels" property="channels" jdbcType="VARCHAR" />
+    <result column="remarks" property="remarks" jdbcType="VARCHAR" />
+    <result column="save_time" property="saveTime" jdbcType="TIMESTAMP" />
+    <result column="address" property="address" jdbcType="LONGVARCHAR" />
+  </resultMap>
+</mapper>

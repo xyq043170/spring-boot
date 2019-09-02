@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo.mapper.AsSupportMapper" >
+  <resultMap id="BaseResultMap" type="com.example.demo.dao.AsSupport" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="file_name" property="fileName" jdbcType="VARCHAR" />
+    <result column="file_url" property="fileUrl" jdbcType="VARCHAR" />
+    <result column="file_type" property="fileType" jdbcType="INTEGER" />
+    <result column="save_time" property="saveTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+</mapper>

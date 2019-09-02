@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	1.整合了controller+jsp
+	2.整合了servlet
+	3.整合了过滤器、监听器
+	4.整合了拦截器
+	5.整合了启动加载数据CommandLineRunner
+	6.整合了jdbc
+	7.整合了jdbc+jpa
+	8.整合了mybatis
+	9.整合了多个数据源用注解进行自动切换，并且调用jdbc实现功能查询+mybatis查询
+	10.实现了打包成jar文件，进行其他电脑运行，并且正常运行
+	11.整合了profile多环境配置文件和java类@Profile注解
+	12.整合了静态代理
+	13.整合了动态代理(仅能代理接口interface)
+	14.整合了CGLIB动态代理(可代理接口和非接口实现类)
+	15.整合了spring的定时器
+ -->

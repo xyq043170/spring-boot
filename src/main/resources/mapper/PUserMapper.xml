@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo.mapper.PUserMapper" >
+  <resultMap id="BaseResultMap" type="com.example.demo.dao.PUser" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="password" property="password" jdbcType="VARCHAR" />
+    <result column="role_id" property="roleId" jdbcType="INTEGER" />
+    <result column="business_name" property="businessName" jdbcType="VARCHAR" />
+    <result column="industry" property="industry" jdbcType="VARCHAR" />
+    <result column="age_limit" property="ageLimit" jdbcType="INTEGER" />
+    <result column="province" property="province" jdbcType="VARCHAR" />
+    <result column="city" property="city" jdbcType="VARCHAR" />
+    <result column="district" property="district" jdbcType="VARCHAR" />
+    <result column="numbers" property="numbers" jdbcType="INTEGER" />
+    <result column="contacts" property="contacts" jdbcType="VARCHAR" />
+    <result column="phone" property="phone" jdbcType="BIGINT" />
+    <result column="use_status" property="useStatus" jdbcType="INTEGER" />
+    <result column="save_time" property="saveTime" jdbcType="TIMESTAMP" />
+    <result column="address" property="address" jdbcType="LONGVARCHAR" />
+    <result column="local" property="local" jdbcType="LONGVARCHAR" />
+  </resultMap>
+</mapper>

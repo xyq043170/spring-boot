@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo.mapper.PostCompanyMapper" >
+  <resultMap id="BaseResultMap" type="com.example.demo.dao.PostCompany" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="post_name" property="postName" jdbcType="VARCHAR" />
+    <result column="post_value" property="postValue" jdbcType="INTEGER" />
+    <result column="save_time" property="saveTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  
+  <select id="getById" resultMap="BaseResultMap">
+        SELECT *
+        FROM post_company
+        WHERE id = #{id}
+   </select>
+   
+   <select id="likeName" resultMap="BaseResultMap" parameterType="string" resultType="list">
+        SELECT *
+        FROM post_company
+        WHERE post_name LIKE CONCAT('%',#{name},'%')
+    </select>
+
+    <select id="getNameById" resultType="string">
+        SELECT post_name
+        FROM post_company
+        WHERE id = #{id}
+    </select>
+</mapper>

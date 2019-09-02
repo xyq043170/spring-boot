@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo.mapper.PShopHistoryOrderMapper" >
+  <resultMap id="BaseResultMap" type="com.example.demo.dao.PShopHistoryOrder" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="order_number" property="orderNumber" jdbcType="BIGINT" />
+    <result column="creator" property="creator" jdbcType="INTEGER" />
+    <result column="allocator" property="allocator" jdbcType="INTEGER" />
+    <result column="handler" property="handler" jdbcType="INTEGER" />
+    <result column="post_name" property="postName" jdbcType="INTEGER" />
+    <result column="post_number" property="postNumber" jdbcType="BIGINT" />
+    <result column="remarks" property="remarks" jdbcType="VARCHAR" />
+    <result column="process_status" property="processStatus" jdbcType="INTEGER" />
+    <result column="creat_time" property="creatTime" jdbcType="TIMESTAMP" />
+    <result column="allot_time" property="allotTime" jdbcType="TIMESTAMP" />
+    <result column="pend_time" property="pendTime" jdbcType="TIMESTAMP" />
+    <result column="hand_time" property="handTime" jdbcType="TIMESTAMP" />
+    <result column="finish_time" property="finishTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+</mapper>
